@@ -1,0 +1,28 @@
+<View style={styles.flatListStyle}>
+                    <FlatList
+                        data={heroes}
+                        keyExtractor={(i) => i.id.toString()}
+                        extraData={search}
+                        renderItem={({ item }) =>
+                            /*<ListItem
+                                    title={filterNames(item.title)}
+                                    isIconNeed={false}
+                                />*/
+                            <>
+                                {isSearch && <Text onPress={() => setSearch(item.title)} style={styles.flatList}>{filterNames(item)}</Text>}
+                            </>
+                        }
+                    />
+                </View>
+
+useEffect(() => {
+    getLists();
+}, []);
+
+const getLists = async () => {
+    const response = await listingsApi.getListings();
+    if (!response.ok) return setError(true);
+    const names = response.data
+    setData(names)
+    setHeroes(data)
+}

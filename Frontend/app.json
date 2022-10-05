@@ -1,0 +1,51 @@
+{
+  "expo": {
+    "plugins": [
+      [
+        "expo-notifications",
+        {
+          "icon": "./app/assets/logo.png",
+          "color": "#ffffff"
+        }
+      ]
+    ],
+    "name": "FoodWiki",
+    "slug": "foodwiki",
+    "owner": "iamakshaypm",
+    "version": "1.0.5",
+    "orientation": "portrait",
+    "icon": "./app/assets/logo.png",
+    "userInterfaceStyle": "light",
+    "splash": {
+      "image": "./app/assets/FoodWikiSplash.png",
+      "resizeMode": "cover",
+      "backgroundColor": "#FFFFFF"
+    },
+    "updates": {
+      "fallbackToCacheTimeout": 0
+    },
+    "assetBundlePatterns": [
+      "**/*"
+    ],
+    "ios": {
+      "supportsTablet": true,
+      "bundleIdentifier": "com.iamakshaypm.FoodWiki"
+    },
+    "android": {
+      "adaptiveIcon": {
+        "foregroundImage": "./app/assets/logo.png",
+        "backgroundColor": "#FFFFFF"
+      },
+      "package": "com.iamakshaypm.FoodWiki",
+      "versionCode": 1,
+      "useNextNotificationsApi": true
+    },
+    "web": {
+      "favicon": "./app/assets/favicon.png"
+    },
+    "description": "",
+    "notification": {
+      "iosDisplayInForeground": true
+    }
+  }
+}
