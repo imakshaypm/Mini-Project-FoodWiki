@@ -4,4 +4,5 @@ This repository consist of frontend and backend of the app we devoloped.
 In case of database we used mongoDB.
 
 # Screenshots
+<img src="https://github.com/imakshaypm/FoodWiki/blob/main/Frontend/Screenshots/Welcome%20Screen.jpg" width="400" height="790"/>
 <img src="https://github.com/imakshaypm/FoodWiki/blob/main/Frontend/Screenshots/Add%20Screen.jpg" width="400" height="790"/>
